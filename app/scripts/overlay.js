@@ -46,6 +46,7 @@ function createOverlay() {
       id:  overlayId,
       frameborder: 0,
       scrolling: 'yes',
+      sandbox: 'allow-scripts allow-top-navigation allow-same-origin'
     })
     .css({
       height: $(window).height(),

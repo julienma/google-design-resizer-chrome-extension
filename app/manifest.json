@@ -15,7 +15,10 @@
     ]
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
   ],
   "browser_action": {
     "default_icon": {
