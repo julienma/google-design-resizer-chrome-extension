@@ -11,6 +11,8 @@ gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
     'app/_locales/**',
+    'app/scripts/**',
+    '!app/scripts/chromereload.js',
     '!app/*.json',
     '!app/*.html',
   ], {
