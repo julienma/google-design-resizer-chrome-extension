@@ -1,5 +1,7 @@
 # Google Design Resizer - Chrome Extension
 
+Download extension at https://chrome.google.com/webstore/detail/google-design-resizer/mkmgkfcdbabajchggfiebcaoghcajmki?hl=fr&gl=FR.
+
 ## Description
 
 Overlay the Resizer tool from Google (http://g.co/design/resizer) loaded with the current page.
