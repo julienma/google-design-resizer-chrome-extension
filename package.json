@@ -30,7 +30,8 @@
   "eslintConfig": {
     "env": {
       "node": true,
-      "browser": true
+      "browser": true,
+      "jquery": true
     },
     "globals": {
       "chrome": true
