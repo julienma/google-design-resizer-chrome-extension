@@ -46,6 +46,7 @@ function createOverlay() {
       id:  overlayId,
       frameborder: 0,
       scrolling: 'yes',
+      sandbox: 'allow-scripts allow-modals'
     })
     .css({
       height: $(window).height(),
