@@ -16,12 +16,6 @@ function checkUrl(url) {
   // 'https://localhost:3000/jlong/2428561?foo=bar#test'
   var parsedUrl = new URL(url);
 
-  // check if we're on a HTTPS page
-  if (parsedUrl.protocol == 'https:') {
-    console.log('Sorry, this extension doesn\'t (yet) work on HTTPS pages :(');
-    return false;
-  }
-
   // check if we're on a localhost page
   if (parsedUrl.hostname == 'localhost' || parsedUrl.hostname == '127.0.0.1') {
     // special case for 'localhost'
@@ -42,17 +36,17 @@ function createOverlay() {
   // check URL, adapt it for local dev if required
   if (correctUrl = checkUrl(url)) {
     $('<iframe>', {
-      src: 'http://g.co/design/resizer#device=' + device + '&url=' + encodeURI(correctUrl),
+      src: 'https://material.io/resizer/#device=' + device + '&url=' + encodeURI(correctUrl),
       id:  overlayId,
       frameborder: 0,
-      scrolling: 'yes',
+      scrolling: 'yes'
     })
     .css({
-      height: $(window).height(),
-      width: $(window).width(),
+      height: '100%',
+      width: '100%',
       position: 'fixed',
       top: '0',
-      'z-index': '10000'
+      'z-index': '99999'
     })
     .appendTo('body');
   }
@@ -63,7 +57,7 @@ function createOverlay() {
   // Check if the overlay exists
   if ($('#' + overlayId).length) {
     // destroy it
-    $('#' + overlayId).remove();
+    $('#' + overlayId).fadeToggle('');
   } else {
     // or create it
     console.log('Loading Google Resizer for', url);

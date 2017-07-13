@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Google Design Resizer",
+    "message": "Google Material Design Resizer",
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "Overlay the Resizer tool from Google (http://g.co/design/resizer) loaded with the current page.",
+    "message": "Overlay the Resizer tool from Google (https://material.io/resizer/) loaded with the current page.",
     "description": "The description of the application"
   }
 }
