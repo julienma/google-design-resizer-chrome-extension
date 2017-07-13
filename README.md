@@ -16,10 +16,10 @@ USAGE
 Click the button, and an overlay of [Google Material Design Resizer](https://material.io/resizer/) with the current URL loaded will be displayed.
 Click again to hide the overlay and get back to your website.
 
-REQUIRE HTTPS
+REQUIRES HTTPS
 
 The extension now supports HTTPS pages.
-Actually, it's more than that: Google Resizer now **requires HTTPS pages**. Using the extension (or the plain [Google Resizer website](https://material.io/resizer/)) on an HTTP-only website will make Google Resizer enter an infinite refresh loop.
+Actually, it's more than that: Google Resizer now **requires HTTPS pages**. Using the extension (or directly the [Google Resizer website](https://material.io/resizer/)) on an HTTP-only website will make Google Resizer enter an infinite refresh loop.
 
 This is due to Google Resizer forcing the [`Upgrade-Insecure-Requests` header](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/fixing-mixed-content#upgrading_insecure_requests), which forces any HTTP resource to be loaded over HTTPS. This directive **cascades to iframes**, meaning that non-HTTPS page will never be loaded by Google Resizer tool.
 
