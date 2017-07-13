@@ -4,7 +4,7 @@
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "Overlay the Resizer tool from Google (https://material.io/resizer/) loaded with the current page.",
+    "message": "Overlay current page in Google Resizer tool (https://material.io/resizer/). HTTPS only.",
     "description": "The description of the application"
   }
 }
